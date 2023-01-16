@@ -3,10 +3,10 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from '../images/main_b.png'
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Home', href: '#', current: true },
+  { name: 'New Arrivals', href: '#', current: false },
+  { name: 'Sale', href: '#', current: false },
+  { name: 'Contact Us', href: '#', current: false },
 ]
 
 function classNames(...classes) {
@@ -65,7 +65,7 @@ export default function Example() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 mt-8">
                 <button
                   type="button"
-                  className="rounded-full p-1 text-gray-400 hover:text-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                  className="rounded-full p-1 text-black hover:text-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
@@ -97,7 +97,7 @@ export default function Example() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-black')}
                           >
                             Your Profile
                           </a>
@@ -107,7 +107,7 @@ export default function Example() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-black')}
                           >
                             Settings
                           </a>
@@ -117,7 +117,7 @@ export default function Example() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-black')}
                           >
                             Sign out
                           </a>
@@ -138,7 +138,7 @@ export default function Example() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    item.current ? 'text-black' : 'text-black hover:bg-gray-700 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
