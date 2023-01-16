@@ -3,7 +3,7 @@ import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from '../images/main.png'
 import BLogo from '../images/main_b.png'
-
+import '../App.css'
 const navigation = [
     { name: 'Home', href: '#', current: false},
     { name: 'New Arrivals', href: '#', current: false },
@@ -43,13 +43,13 @@ const Navbar = () => {
                     alt="Your Company"
                   />
                   <img
-                    className="hidden h-20 w-20 lg:block"
+                    className="hidden h-20 w-20 lg:block main_img"
                     src={BLogo}
                     alt="Your Company"
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-4 mt-32">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -71,8 +71,6 @@ const Navbar = () => {
                   type="button"
                   className="rounded-full p-1 text-black hover:text-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 "
                 >
-                  <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
                 </button>
               </div>
             </div>
