@@ -7,9 +7,7 @@ import Navbar from './Components/Layout/Navbar';
 function App() {
   return (
     <>
-  <Navbar/>
   <Home/>
-  <Footer/>
     </>
   );
 }
