@@ -1,9 +1,71 @@
-.rock{
-    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(0, 0, 0));
+/* .rock{ */
+    /* background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(0, 0, 0)); */
+/* } */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@800&display=swap');
+:root{
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
 }
-@media screen and (max-width:768px) {
-    .rock img{
-        height: 10rem;
-        width: 7rem;
+
+
+.main_header_left{
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Sofia Sans', sans-serif;
+    align-items: flex-start;
+}
+.main_header_right{
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_header_left p{
+    font-size: 2rem;
+}
+
+.main_header_left h1{
+    font-size: 4rem;
+    margin: 1rem 0 4rem ;
+    text-transform: capitalize;
+}
+
+.main_header_left span{
+    color: red;
+}
+
+
+@media (max-width:768px) {
+    html{
+        font-size: 62.5%;
     }
+    .main_header_left{
+        height: auto;
+        margin: 5rem 0 ;
+        color: white;
+    }
+
+    .main_header_right{
+        height: auto;
+        margin-top: 3rem ;
+    }
+}
+
+.img-fluid{
+    height: 40rem;
+    width: 22rem;
+    margin-top: 5rem;
+}
+
+.main_header{
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(0, 0, 0));
+    font-family: 'poppins';
+    font-size: 23rem;
 }
