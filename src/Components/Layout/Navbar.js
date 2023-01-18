@@ -1,7 +1,8 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-
+import Logo from '../../images/main.png'
+import './layout.css'
 const navigation = [
   { name: 'Home', href: '#', current: true },
   { name: 'New Arrivals', href: '#', current: false },
@@ -35,12 +36,12 @@ export default function Navbar() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="block h-8 w-auto lg:hidden"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    src={Logo}
                     alt="Your Company"
                   />
                   <img
-                    className="hidden h-8 w-auto lg:block"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    className="hidden h-8 w-auto lg:block main_img"
+                    src={Logo}
                     alt="Your Company"
                   />
                 </div>
