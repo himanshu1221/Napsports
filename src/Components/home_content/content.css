@@ -1,3 +1,9 @@
 .rock{
     background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(0, 0, 0));
 }
+@media screen and (max-width:768px) {
+    .rock img{
+        height: 10rem;
+        width: 7rem;
+    }
+}
