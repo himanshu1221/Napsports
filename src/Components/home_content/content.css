@@ -10,35 +10,39 @@
 
 
 .main_header_left{
-    height: 50rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     justify-content: center;
     font-family: 'Sofia Sans', sans-serif;
-    align-items: flex-start;
+    align-items: center;
+    margin: 0 6rem;
 }
 .main_header_right{
-    height: 50rem;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
 .main_header_left p{
     font-size: 2rem;
+    color: white;
 }
 
 .main_header_left h1{
     font-size: 4rem;
-    margin: 1rem 0 4rem ;
+    color:white;
     text-transform: capitalize;
 }
 
 .main_header_left span{
     color: red;
+}
+
+.main_header_right figure{
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -48,24 +52,27 @@
     }
     .main_header_left{
         height: auto;
-        margin: 5rem 0 ;
         color: white;
+        
     }
 
     .main_header_right{
         height: auto;
-        margin-top: 3rem ;
+    }
+    .main_header_right figure{
+        margin: auto;
     }
 }
 
 .img-fluid{
     height: 40rem;
     width: 22rem;
-    margin-top: 5rem;
 }
 
 .main_header{
     background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(0, 0, 0));
     font-family: 'poppins';
     font-size: 23rem;
+    display: flex;
+    flex-direction: column;
 }
