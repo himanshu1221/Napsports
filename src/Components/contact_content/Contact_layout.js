@@ -1,12 +1,14 @@
 import React from 'react'
 import './contact_layout.css'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import SVG1 from '../../images/svg1.svg'
 
 const Contact_layout = () => {
   return (
     <>
-      <h1 className='mt-10 mb-20'>Talk with our sales team</h1>
-      <div className="min-h-screen py-26 ">
+      <h1 className='mt-10 mb-20 headings'><u>Talk with our sales team</u></h1>
+      <img src={SVG1} alt="" className='h-52 mx-auto mb-20' />
+      <div className="min-h-screen lg:py-26 ">
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row w-8/12 mx-auto bg-black text-white rounded-xl shadow-lg overflow-hidden" >
             <div className='w-full lg:w-1/2 bg-black flex flex-col items-center justify-center'>
@@ -21,17 +23,17 @@ const Contact_layout = () => {
               </div>
             </div>
             <div className='w-full lg:w-1/2 py-16 px-12 form '>
-              <h1 className='mb-4'>Query Form</h1>
+              <h1 className='mb-4'> Query Form</h1>
               <form action="#">
                 <div className='grid grid-cols-2 gap-5'>
-                      <input className='border border-gray-400 py-1 px-2 mt-10 text-black' type="text" id="fname" name="firstname" placeholder="Your First Name.."></input>
-                      <input className='border border-gray-400 py-1 px-2 mt-10 text-black' type="text" id="lname" name='lastname' placeholder='your Last Name' />
+                  <input className='border border-gray-400 py-1 px-2 mt-10 text-black' type="text" id="fname" name="firstname" placeholder="Your First Name.."></input>
+                  <input className='border border-gray-400 py-1 px-2 mt-10 text-black' type="text" id="lname" name='lastname' placeholder='your Last Name' />
                 </div>
                 <div className="mt-10">
-                <input className='border border-gray-400 py-1 px-2 w-full text-black' type="email" id="email" name='email' placeholder='your@xyz' />
+                  <input className='border border-gray-400 py-1 px-2 w-full text-black' type="email" id="email" name='email' placeholder='your@xyz' />
                 </div>
                 <div className="mt-10">
-                <input className='border border-gray-400 py-1 px-2 w-full text-black' type="number"   placeholder='Contact Number' />
+                  <input className='border border-gray-400 py-1 px-2 w-full text-black' type="number" placeholder='Contact Number' />
                 </div>
                 <div className="mt-12 mb-10">
                   <button className='w-full bg-purple-500 py-3 text-center text-white'>Submit</button>
