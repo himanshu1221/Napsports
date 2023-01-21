@@ -12,7 +12,7 @@ const Contact_layout = () => {
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row w-8/12 mx-auto bg-black text-white rounded-xl shadow-lg overflow-hidden" >
             <div className='w-full lg:w-1/2 bg-black flex flex-col items-center justify-center'>
-              <h1 className='mb-14'>Location</h1>
+              <h1 className='lg:mb-14 mt-16 mb-14'>Location</h1>
               <div>
                 <MapContainer center={[26.2008, 78.17435]} zoom={12}>
                   <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
