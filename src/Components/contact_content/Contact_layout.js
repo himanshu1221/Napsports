@@ -13,7 +13,7 @@ const Contact_layout = () => {
           <div className="flex flex-col lg:flex-row w-8/12 mx-auto bg-black text-white rounded-xl shadow-lg overflow-hidden" >
             <div className='w-full lg:w-1/2 bg-black flex flex-col items-center justify-center'>
               <h1 className='lg:mb-14 mt-16 mb-14'>Location</h1>
-              <div>
+              <div className='mb-10'>
                 <MapContainer center={[26.2008, 78.17435]} zoom={12}>
                   <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                   <Marker position={[26.2008, 78.17435]}>
@@ -35,7 +35,7 @@ const Contact_layout = () => {
                 <div className="mt-10">
                   <input className='border border-gray-400 py-2 px-2 w-full text-black' type="number" placeholder='Contact Number' />
                 </div>
-                <div className="mt-12 mb-10">
+                <div className="mt-10">
                   <button className='w-full bg-purple-500 py-5 text-center text-white'>Submit</button>
                 </div>
               </form>

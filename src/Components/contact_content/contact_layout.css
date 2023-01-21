@@ -10,7 +10,7 @@ h1{
     text-align: center;
     font-family: 'Unbounded', cursive;
     font-weight: 400;
-    font-size: 2vw;
+    font-size: 3vw;
 }
 body{
     background-image: linear-gradient(115deg , #9F7AEA ,#FEE2FE);
@@ -25,7 +25,7 @@ body{
 
 @media screen and (max-width:916px) {
     h1{
-        margin-top: 2vw;
+        margin-top: 3vw;
         font-size: 10vw;
     }
     .leaflet-container{
