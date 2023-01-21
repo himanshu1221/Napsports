@@ -24,14 +24,14 @@ const Contact_layout = () => {
               <h1 className='mb-4'>Query Form</h1>
               <form action="#">
                 <div className='grid grid-cols-2 gap-5'>
-                      <input className='border border-gray-400 py-1 px-2 mt-10' type="text" id="fname" name="firstname" placeholder="Your First Name.."></input>
-                      <input className='border border-gray-400 py-1 px-2 mt-10' type="text" id="lname" name='lastname' placeholder='your Last Name' />
+                      <input className='border border-gray-400 py-1 px-2 mt-10 text-black' type="text" id="fname" name="firstname" placeholder="Your First Name.."></input>
+                      <input className='border border-gray-400 py-1 px-2 mt-10 text-black' type="text" id="lname" name='lastname' placeholder='your Last Name' />
                 </div>
                 <div className="mt-10">
-                <input className='border border-gray-400 py-1 px-2 w-full' type="email" id="email" name='email' placeholder='your@xyz' />
+                <input className='border border-gray-400 py-1 px-2 w-full text-black' type="email" id="email" name='email' placeholder='your@xyz' />
                 </div>
                 <div className="mt-10">
-                <input className='border border-gray-400 py-1 px-2 w-full' type="number"   placeholder='Contact Number' />
+                <input className='border border-gray-400 py-1 px-2 w-full text-black' type="number"   placeholder='Contact Number' />
                 </div>
                 <div className="mt-12 mb-10">
                   <button className='w-full bg-purple-500 py-3 text-center text-white'>Submit</button>
