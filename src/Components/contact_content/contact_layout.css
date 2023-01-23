@@ -1,17 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 .leaflet-container{
     width: 28vw;
-    height: 23.4vw;
+    height: 45vw;
     margin-left: 2vw;
     /* margin-top: 1vw; */
 }
-h1{
+
+.clothes_container{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.clothes_container .Center_text{
+    position: absolute;
+    color: black;
+    top: 50%;
+    font-size: 7vw;
+    font-weight: 600;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.headings{
     text-align: center;
     font-family: 'Unbounded', cursive;
     font-weight: 400;
     font-size: 3vw;
 }
+
+.query{
+    font-size: 3vw;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 body{
     background-image: linear-gradient(115deg , #9F7AEA ,#FEE2FE);
 }
@@ -21,9 +47,15 @@ body{
     text-decoration:none ;
 }
 
-
+input[type],input[text],input[email],input[number],textarea{
+    outline: none;
+    color: black;
+}
 
 @media screen and (max-width:916px) {
+    .clothes_container .Center_text{
+        margin-left: 5vw;
+    }
     h1{
         margin-top: 3vw;
         font-size: 10vw;

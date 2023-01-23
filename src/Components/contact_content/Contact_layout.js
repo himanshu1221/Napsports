@@ -1,18 +1,22 @@
-import React from 'react'
-import './contact_layout.css'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import SVG1 from '../../images/svg1.svg'
-
+import React from 'react';
+import './contact_layout.css';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import SVG1 from '../../images/svg1.svg';
+import Clothes from '../../images/clothes.webp';
 const Contact_layout = () => {
   return (
     <>
-      <h1 className='mt-10 mb-20 headings'><u>Talk with our sales team</u></h1>
-      <img src={SVG1} alt="" className='h-52 mx-auto mb-20' />
-      <div className="min-h-screen lg:py-26 ">
+    <div className='clothes_container'>
+      <h1 className='Center_text mx-auto mt-32 lg:ml-8'>How Can We Help ?</h1>
+    {/* <img src={Clothes} className="Clothes mb-10" alt="" /> */}
+    </div>
+      {/* <h1 className='mt-10 mb-20 headings'><u>Talk with our sales team</u></h1> */}
+      <img src={SVG1} alt="" className='flex justify-end h-52 mb-20 mt-32' />
+      <div className="lg:py-26 ">
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row w-8/12 mx-auto bg-black text-white rounded-xl shadow-lg overflow-hidden" >
             <div className='w-full lg:w-1/2 bg-black flex flex-col items-center justify-center'>
-              <h1 className='lg:mb-14 mt-16 mb-14'>Location</h1>
+              <h1 className='lg:mb-14 mt-16 mb-14 query'>Location</h1>
               <div className='mb-10'>
                 <MapContainer center={[26.2008, 78.17435]} zoom={12}>
                   <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
@@ -23,7 +27,7 @@ const Contact_layout = () => {
               </div>
             </div>
             <div className='w-full lg:w-1/2 py-16 px-12 form '>
-              <h1 className='mb-4'> Query Form</h1>
+              <h1 className='mb-4 query'> Query Form</h1>
               <form action="#">
                 <div className='grid grid-cols-2 gap-5'>
                   <input className='border border-gray-400 py-1 px-2 mt-10 text-black' type="text" id="fname" name="firstname" placeholder="Your First Name.."></input>
@@ -36,12 +40,18 @@ const Contact_layout = () => {
                   <input className='border border-gray-400 py-2 px-2 w-full text-black' type="number" placeholder='Contact Number' />
                 </div>
                 <div className="mt-10">
+                 <textarea name="" id="" cols="30" rows="10" placeholder='Your Query'></textarea>
+                </div>
+                <div className="mt-10">
                   <button className='w-full bg-purple-500 py-5 text-center text-white'>Submit</button>
                 </div>
               </form>
             </div>
           </div>
         </div>
+      </div>
+      <div className="Socials">
+        <h1>Ping Us At</h1>
       </div>
     </>
   )
