@@ -54,7 +54,8 @@ input[type],input[text],input[email],input[number],textarea{
 
 @media screen and (max-width:916px) {
     .clothes_container .Center_text{
-        margin-left: 5vw;
+        font-size: 7vw;
+        font-weight: 600;
     }
     .leaflet-container{
         width: 62vw;
