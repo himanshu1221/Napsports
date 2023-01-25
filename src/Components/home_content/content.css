@@ -13,21 +13,20 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    justify-content: center;
     font-family: 'Sofia Sans', sans-serif;
-    align-items: center;
     margin: 0 6rem;
+    width: 50%;
 }
 .main_header_right{
     display: flex;
-    justify-content: center;
     justify-content: center;
     align-items: flex-start;
 }
 
 .main_header_left p{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
+    font-weight: lighter;
 }
 
 .main_header_left h1{
@@ -74,5 +73,5 @@
     font-family: 'poppins';
     font-size: 23rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
