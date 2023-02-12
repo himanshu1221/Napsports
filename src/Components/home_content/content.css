@@ -8,15 +8,8 @@
     --main-color: #0097e6;
     --txt-color:#ff3131;
 }
-
-
 .main_header_left{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     font-family: 'Sofia Sans', sans-serif;
-    margin: 0 6rem;
-    width: 50%;
 }
 .store_main{
     color: #fff !important;
@@ -52,33 +45,15 @@
 }
 
 
-@media (max-width:768px) {
-    html{
-        font-size: 62.5%;
-    }
-    .main_header_left{
-        height: auto;
-        color: white;
-        
-    }
-
-    .main_header_right{
-        height: auto;
-    }
-    .main_header_right figure{
-        margin: auto;
-    }
-}
 
 .img-fluid{
-    height: 40rem;
+    height: 100%;
     width: 22rem;
 }
 
 .main_header{
-    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(0, 0, 0));
+/*    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(0, 0, 0));*/
+    background: #000;
     font-family: 'poppins';
     font-size: 23rem;
-    display: flex;
-    flex-direction: row;
 }
